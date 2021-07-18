@@ -20,17 +20,11 @@ mjm `.__.-.__.'
 Install the latest version by using:
 
 ```bash
-git clone https://github.com/mattjmoran/dotfiles.git && cd dotfiles && ./bootstrap.sh
-```
-
-...and update with:
-
-```bash
-./bootstrap.sh
+git clone https://github.com/mattjmoran/dotfiles.git && cd dotfiles && ./provision.sh
 ```
 
 ## TODO
 - [x] Create Github repository
-- [ ] Up working with Brew
+- [x] Up working with Brew
 - [ ] Core application installer
 - [ ] Vim

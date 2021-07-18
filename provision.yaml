@@ -7,8 +7,13 @@
 - link:
     ~/.gitconfig: .gitconfig
     ~/.vimrc: .vimrc
+    ~/.config/fish: 
+      glob: true
+      force: true
+      create: true
+      path: .config/fish
 
 - shell:
-    - command: source brew.sh
+    - command: sh brew.sh
       stdout: true
-      stderr: true    
+      stderr: true  
