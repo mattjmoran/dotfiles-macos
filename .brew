@@ -23,6 +23,24 @@ else
     echo "Default shell is already fish."
 fi
 
-brew services start yabai
-brew services start skhd
-brew services start spacebar
+brew services list | grep skhd
+if [ $? != 0 ] ; then
+    brew services start skhd
+else
+    brew services restart skhd
+fi
+
+brew services list | grep spacebar
+if [ $? != 0 ] ; then
+    brew services start spacebar
+else
+    brew services restart spacebar
+fi
+
+brew services list | grep yabai
+if [ $? != 0 ] ; then
+    brew services start yabai
+    sudo yabai --install-sa
+else
+    brew services restart yabai
+fi
