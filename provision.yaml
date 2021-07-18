@@ -7,6 +7,7 @@
 - link:
     ~/.gitconfig: .gitconfig
     ~/.vimrc: .vimrc
+    ~/.gitignore: .gitignore
     ~/.config/fish: 
       glob: true
       force: true
@@ -14,6 +15,9 @@
       path: .config/fish
 
 - shell:
-    - command: sh brew.sh
+    - command: sh .macos
       stdout: true
-      stderr: true  
+      stderr: true 
+    - command: sh .brew
+      stdout: true
+      stderr: true 
