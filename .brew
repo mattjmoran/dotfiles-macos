@@ -30,17 +30,17 @@ else
     brew services restart skhd
 fi
 
-brew services list | grep spacebar
-if [ $? != 0 ] ; then
-    brew services start spacebar
-else
-    brew services restart spacebar
-fi
-
 brew services list | grep yabai
 if [ $? != 0 ] ; then
     brew services start yabai
     sudo yabai --install-sa
 else
     brew services restart yabai
+fi
+
+brew services list | grep spacebar
+if [ $? != 0 ] ; then
+    brew services start spacebar
+else
+    brew services restart spacebar
 fi

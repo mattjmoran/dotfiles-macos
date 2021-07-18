@@ -1,0 +1,31 @@
+# open terminal
+cmd - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+
+# move windows
+alt + ctrl - left : yabai -m window --warp west
+alt + ctrl - down : yabai -m window --warp south
+alt + ctrl - up : yabai -m window --warp north
+alt + ctrl - right : yabai -m window --warp east
+
+# change focus windows/spaces
+cmd + alt - left : yabai -m window --focus west || yabai -m space --focus prev
+cmd + alt - down : yabai -m window --focus south
+cmd + alt - up : yabai -m window --focus north
+cmd + alt - right : yabai -m window --focus east || yabai -m space --focus next
+
+# move windows to spaces
+alt + ctrl - 1 : yabai -m window --space 1 && yabai -m space --focus 1
+alt + ctrl - 2 : yabai -m window --space 2 && yabai -m space --focus 2
+alt + ctrl - 3 : yabai -m window --space 3 && yabai -m space --focus 3
+alt + ctrl - 4 : yabai -m window --space 4 && yabai -m space --focus 4
+alt + ctrl - 5 : yabai -m window --space 4 && yabai -m space --focus 5
+alt + ctrl - 6 : yabai -m window --space 4 && yabai -m space --focus 6
+alt + ctrl - 7 : yabai -m window --space 4 && yabai -m space --focus 7
+alt + ctrl - 8 : yabai -m window --space 4 && yabai -m space --focus 8
+alt + ctrl - 9 : yabai -m window --space 4 && yabai -m space --focus 9
+
+# rotate windows
+alt + ctrl - r : yabai -m space --rotate 90
+
+# create spaces
+cmd + alt - return : yabai -m space --create && yabai -m space --focus last
