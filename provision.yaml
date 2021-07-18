@@ -13,9 +13,9 @@
     ~/.config/fish/config.fish: .config/fish/config.fish
 
 - shell:
-    - command: sh .macos
+    - command: sh .brew
       stdout: true
       stderr: true 
-    - command: sh .brew
+    - command: sh .macos
       stdout: true
       stderr: true 

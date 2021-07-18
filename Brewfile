@@ -6,6 +6,8 @@ tap "homebrew/core"
 # Brews (Packages)
 brew "git"
 brew "fish"
+brew "bat"
+brew "exa"
 
 # Casks (Applications)
 cask "firefox", args: { no_quarantine: true }
