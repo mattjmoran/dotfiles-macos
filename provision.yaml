@@ -10,7 +10,10 @@
     ~/.gitconfig: .gitconfig
     ~/.vimrc: .vimrc
     ~/.gitignore: .gitignore
-    ~/.config/fish/config.fish: .config/fish/config.fish
+    ~/.config/fish/config.fish: config.fish
+    ~/.config/yabai/yabairc: .yabairc
+    ~/.config/skhd/skhdrc: .skhdrc
+    ~/.config/spacebar/spacebarrc: .spacebarrc
 
 - shell:
     - command: sh .brew

@@ -23,3 +23,6 @@ else
     echo "Default shell is already fish."
 fi
 
+brew services start yabai
+brew services start skhd
+brew services start spacebar
