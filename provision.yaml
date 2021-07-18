@@ -1,18 +1,16 @@
+- clean: ['~']
+
 - defaults:
     link:
+      create: true
+      force: true
       relink: true
-
-- clean: ['~']
 
 - link:
     ~/.gitconfig: .gitconfig
     ~/.vimrc: .vimrc
     ~/.gitignore: .gitignore
-    ~/.config/fish: 
-      glob: true
-      force: true
-      create: true
-      path: .config/fish
+    ~/.config/fish/config.fish: .config/fish/config.fish
 
 - shell:
     - command: sh .macos
