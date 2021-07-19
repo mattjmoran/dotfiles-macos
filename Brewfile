@@ -18,6 +18,11 @@ tap "cmacrae/formulae"
 brew "git"
 brew "fish"
 brew "neofetch"
+brew "defaultbrowser"
+# Development
+brew "openjdk"
+brew "python@3.9"
+brew "make"
 # Apperance
 brew "bat"
 brew "exa"
@@ -31,18 +36,25 @@ brew "spacebar"
 #####################################################
 # Tools/Utilities
 cask "kitty", args: { no_quarantine: true }
-# Daily
 cask "firefox", args: { no_quarantine: true }
 cask "notion", args: { no_quarantine: true }
 # Gaming
 cask "runelite", args: { no_quarantine: true }
+cask "minecraft", args: { no_quarantine: true }
 cask "steam", args: { no_quarantine: true }
 # Work
 cask "microsoft-teams", args: { no_quarantine: true }
 cask "cisco-jabber", args: { no_quarantine: true }
 cask "tableau", args: { no_quarantine: true }
 cask "tableau-prep", args: { no_quarantine: true }
-
+# Productivity
+cask "zoomus", args: { no_quarantine: true }
+# Content Creation
+cask "adobe-creative-cloud", args: { no_quarantine: true }
+# Virtualization
+cask "parallels", args: { no_quarantine: true } 
+# Development
+cask "eclipse-java", args: { no_quarantine: true }
 
 #####################################################
 # Mac App Store                                     #

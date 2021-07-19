@@ -23,6 +23,11 @@ else
     echo "Default shell is already fish."
 fi
 
+defaultbrowser | grep firefox
+if [ $? == 0 ] ; then
+    defaultbrowser firefox
+fi
+
 brew services list | grep skhd
 if [ $? != 0 ] ; then
     brew services start skhd
@@ -42,5 +47,5 @@ brew services list | grep spacebar
 if [ $? != 0 ] ; then
     brew services start spacebar
 else
-    brew services restart spacebar
+    brew services stop spacebar && brew services start spacebar
 fi

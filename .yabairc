@@ -47,4 +47,8 @@ yabai -m config window_gap                      8
 # spacebar
 yabai -m config external_bar all:26:0
 
+# floating windows
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Bitwarden$" manage=off
+
 echo "yabai configuration loaded.."
