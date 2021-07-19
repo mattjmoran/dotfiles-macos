@@ -19,10 +19,9 @@ brew "git"
 brew "fish"
 brew "neofetch"
 brew "defaultbrowser"
+brew "wallpaper"
 # Development
 brew "openjdk"
-brew "python@3.9"
-brew "make"
 # Apperance
 brew "bat"
 brew "exa"
@@ -48,7 +47,7 @@ cask "cisco-jabber", args: { no_quarantine: true }
 cask "tableau", args: { no_quarantine: true }
 cask "tableau-prep", args: { no_quarantine: true }
 # Productivity
-cask "zoomus", args: { no_quarantine: true }
+cask "zoom", args: { no_quarantine: true }
 # Content Creation
 cask "adobe-creative-cloud", args: { no_quarantine: true }
 # Virtualization

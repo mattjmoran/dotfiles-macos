@@ -49,3 +49,5 @@ if [ $? != 0 ] ; then
 else
     brew services stop spacebar && brew services start spacebar
 fi
+
+wallpaper set DefaultDesktop.jpg
