@@ -5,6 +5,11 @@
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
+# colors (border)
+yabai -m config active_window_border_color      0xff8787af
+yabai -m config normal_window_border_color      0xff555555
+yabai -m config insert_feedback_color           0xffd75f5f
+
 # space names
 yabai -m space 1 --label i
 yabai -m space 2 --label ii
@@ -32,9 +37,6 @@ yabai -m config normal_window_opacity           0.90
 # border
 yabai -m config window_border                   on
 yabai -m config window_border_width             4
-yabai -m config active_window_border_color      0xff8787af
-yabai -m config normal_window_border_color      0xff555555
-yabai -m config insert_feedback_color           0xffd75f5f
 
 # general space settings
 yabai -m config layout                          bsp
@@ -47,7 +49,7 @@ yabai -m config window_gap                      8
 # spacebar
 yabai -m config external_bar all:26:0
 
-# floating windows
+# floating window exceptions
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off
 yabai -m rule --add app="^Cherwell Service Management$" manage=off

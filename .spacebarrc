@@ -1,5 +1,35 @@
 #!/usr/bin/env sh
+#######################################
+#  Fonts                              #
+#######################################
+spacebar -m config text_font                "MesloLGL Nerd Font Mono:Regular:13.0"
+spacebar -m config icon_font                "MesloLGL Nerd Font Mono:Regular:13.0"
 
+#######################################
+#  Colors                             #
+#######################################
+spacebar -m config right_shell_icon_color   0xffebdbb2
+spacebar -m config background_color         0xff282828
+spacebar -m config foreground_color         0xffebdbb2
+spacebar -m config space_icon_color         0xfffb4934
+spacebar -m config power_icon_color         0xffcd950c
+spacebar -m config battery_icon_color       0xffd75f5f
+spacebar -m config clock_icon_color         0xffebdbb2
+
+#######################################
+#  Icons                              #
+#######################################
+spacebar -m config right_shell_command      "whoami"
+spacebar -m config right_shell_icon         
+spacebar -m config power_icon_strip          
+spacebar -m config space_icon_strip         I II III IV V VI VII VIII IX X
+spacebar -m config space_icon               
+spacebar -m config clock_icon               
+spacebar -m config clock_format             "%a %m/%d %I:%M %p"
+
+#######################################
+#  Display                            #
+#######################################
 spacebar -m config position                 top
 spacebar -m config display                  main
 spacebar -m config height                   26
@@ -10,25 +40,8 @@ spacebar -m config power                    on
 spacebar -m config padding_left             15
 spacebar -m config padding_right            15
 spacebar -m config spacing_left             20
-spacebar -m config spacing_right            10
-spacebar -m config text_font                "MesloLGL Nerd Font Mono:Regular:13.0"
-spacebar -m config icon_font                "MesloLGL Nerd Font Mono:Regular:13.0"
+spacebar -m config spacing_right            15
 spacebar -m config right_shell              on
-spacebar -m config right_shell_command      "whoami"
-spacebar -m config right_shell_icon     
-spacebar -m config right_shell_icon_color   0xffebdbb2
-spacebar -m config background_color         0xff282828
-spacebar -m config foreground_color         0xffebdbb2
-spacebar -m config space_icon_color         0xfffb4934
-spacebar -m config power_icon_color         0xffcd950c
-spacebar -m config battery_icon_color       0xffd75f5f
-spacebar -m config dnd_icon_color           0xff83a598
-spacebar -m config clock_icon_color         0xffebdbb2
-spacebar -m config power_icon_strip          
-spacebar -m config space_icon_strip         I II III IV V VI VII VIII IX X
-spacebar -m config space_icon               
-spacebar -m config clock_icon               
-spacebar -m config dnd_icon                 
-spacebar -m config clock_format             "%m/%d %R"
+spacebar -m config dnd                      off
 
 echo "spacebar configuration loaded.."

@@ -58,11 +58,13 @@ cask "eclipse-java", args: { no_quarantine: true }
 #####################################################
 # Mac App Store                                     #
 #####################################################
-# Daily
+# Tools/Utilities
 mas "bitwarden", id: 1352778147
+# Productivity
+mas "iA Writer", id: 775737590
 
 #####################################################
 # System Fonts                                      #
 #####################################################
-# Used in: .spaceebarrc
+# Used in: .spaceebarrc & kitty.conf
 cask "font-meslo-lg-nerd-font"

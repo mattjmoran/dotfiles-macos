@@ -47,7 +47,7 @@ brew services list | grep spacebar
 if [ $? != 0 ] ; then
     brew services start spacebar
 else
-    brew services stop spacebar && brew services start spacebar
+    brew services restart spacebar
 fi
 
 wallpaper set DefaultDesktop.jpg
