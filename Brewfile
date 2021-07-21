@@ -36,6 +36,7 @@ brew "spacebar"
 # Tools/Utilities
 cask "kitty", args: { no_quarantine: true }
 cask "firefox", args: { no_quarantine: true }
+cask "google-chrome", args: { no_quarantine: true }
 cask "notion", args: { no_quarantine: true }
 # Gaming
 cask "runelite", args: { no_quarantine: true }
