@@ -8,12 +8,12 @@ spacebar -m config icon_font                "MesloLGL Nerd Font Mono:Regular:13.
 #######################################
 #  Colors                             #
 #######################################
-spacebar -m config right_shell_icon_color   0xffffe598
+spacebar -m config right_shell_icon_color   0xffb4b264
 spacebar -m config background_color         0xd6110b0d
 spacebar -m config foreground_color         0xffffe598
 spacebar -m config space_icon_color         0xffff4331
-spacebar -m config power_icon_color         0xfff7d75c
-spacebar -m config battery_icon_color       0xff9eb2b4
+spacebar -m config battery_icon_color       0xff515c5d
+spacebar -m config power_icon_color         0xff9eb2b4
 spacebar -m config clock_icon_color         0xffffe598
 
 #######################################

@@ -20,9 +20,8 @@
     ~/.config/kitty/kitty.conf: kitty.conf
 
 - shell:
-    - command: sh .brew
+    - command: sh brew.sh
       stdout: true
       stderr: true 
     - command: sh .macos
-      stdout: true
-      stderr: true 
+      stderr: true

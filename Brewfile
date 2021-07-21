@@ -20,6 +20,7 @@ brew "fish"
 brew "neofetch"
 brew "defaultbrowser"
 brew "wallpaper"
+brew "mas"
 # Development
 brew "openjdk"
 # Apperance

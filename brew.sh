@@ -14,7 +14,7 @@ fi
 # Installs taps (repositories), brew (packages) and casks (applications)
 brew bundle --no-lock --quiet
 
-# Post-install tasks for packages
+# Check default shell, set it to Fish
 if [ ! -n "`$SHELL -c 'echo $FISH_VERSION'`" ] ; then
     echo "Setting default shell to fish..."
     sudo bash -c 'echo /usr/local/bin/fish >> /etc/shells'
@@ -23,11 +23,13 @@ else
     echo "Default shell is already fish."
 fi
 
+# Check default browser, set it to Firefox
 defaultbrowser | grep firefox
 if [ $? == 0 ] ; then
     defaultbrowser firefox
 fi
 
+# Check to see if skhd is running, restart or start service based on result
 brew services list | grep skhd
 if [ $? != 0 ] ; then
     brew services start skhd
@@ -35,6 +37,7 @@ else
     brew services restart skhd
 fi
 
+# Check to see if yabai is running, restart or start & install SA based on resut
 brew services list | grep yabai
 if [ $? != 0 ] ; then
     brew services start yabai
@@ -43,6 +46,7 @@ else
     brew services restart yabai
 fi
 
+# Check to see if spacebar is running, restart or start service based on result
 brew services list | grep spacebar
 if [ $? != 0 ] ; then
     brew services start spacebar
@@ -50,4 +54,5 @@ else
     brew services restart spacebar
 fi
 
+# Set the system wallpaper to "DefaultDesktop.jpg"
 wallpaper set DefaultDesktop.jpg
