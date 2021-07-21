@@ -10,7 +10,10 @@
     ~/.gitconfig: .gitconfig
     ~/.vimrc: .vimrc
     ~/.gitignore: .gitignore
-    ~/.config/fish/config.fish: config.fish
+    ~/.config/fish/fish_variables: fish/fish_variables
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/functions/fish_prompt.fish: fish/functions/fish_prompt.fish
+    ~/.config/fish/functions/fish_right_prompt.fish: fish/functions/fish_right_prompt.fish
     ~/.config/yabai/yabairc: .yabairc
     ~/.config/skhd/skhdrc: .skhdrc
     ~/.config/spacebar/spacebarrc: .spacebarrc
