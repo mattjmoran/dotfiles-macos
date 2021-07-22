@@ -21,6 +21,7 @@ brew "neofetch"
 brew "defaultbrowser"
 brew "wallpaper"
 brew "mas"
+brew "jq"
 # Development
 brew "openjdk"
 # Apperance
