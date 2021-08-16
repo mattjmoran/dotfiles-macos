@@ -24,7 +24,7 @@ yabai -m space 10 --label x
 
 # global settings
 yabai -m config mouse_follows_focus             off
-yabai -m config focus_follows_mouse           	autoraise
+yabai -m config focus_follows_mouse           	autofocus
 yabai -m config window_placement                second_child
 yabai -m config window_topmost                  on
 yabai -m config window_shadow                   on
@@ -52,7 +52,7 @@ yabai -m config external_bar all:26:0
 # floating window exceptions
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off
-yabai -m rule --add app="^Cherwell Service Management$" manage=off
+yabai -m rule --add app="^Music$" manage=off
 yabai -m rule --add app="^Firefox$" opacity=1.0
 
 echo "yabai configuration loaded.."

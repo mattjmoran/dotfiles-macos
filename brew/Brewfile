@@ -6,6 +6,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-drivers"
 # Yabai/SKHD
 tap "koekeishiya/formulae"
 # Spacebar
@@ -24,6 +25,7 @@ brew "mas"
 brew "jq"
 # Development
 brew "openjdk"
+brew "mdv"
 # Apperance
 brew "bat"
 brew "exa"
@@ -40,10 +42,12 @@ cask "kitty", args: { no_quarantine: true }
 cask "firefox", args: { no_quarantine: true }
 cask "google-chrome", args: { no_quarantine: true }
 cask "notion", args: { no_quarantine: true }
+cask "logitech-options", args: { no_quarantine: true }
 # Gaming
 cask "runelite", args: { no_quarantine: true }
 cask "minecraft", args: { no_quarantine: true }
 cask "steam", args: { no_quarantine: true }
+cask "discord", args: { no_quarantine: true }
 # Work
 cask "microsoft-teams", args: { no_quarantine: true }
 cask "cisco-jabber", args: { no_quarantine: true }
@@ -65,6 +69,10 @@ cask "eclipse-java", args: { no_quarantine: true }
 mas "bitwarden", id: 1352778147
 # Productivity
 mas "iA Writer", id: 775737590
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Word", id: 462054704
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft OneNote", id: 784801555
 
 #####################################################
 # System Fonts                                      #
