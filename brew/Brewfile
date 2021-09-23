@@ -29,6 +29,7 @@ brew "mdv"
 # Apperance
 brew "bat"
 brew "exa"
+brew "tree"
 # Window Manager
 brew "yabai"
 brew "skhd"
@@ -39,10 +40,13 @@ brew "spacebar"
 #####################################################
 # Tools/Utilities
 cask "kitty", args: { no_quarantine: true }
-cask "firefox", args: { no_quarantine: true }
-cask "google-chrome", args: { no_quarantine: true }
 cask "notion", args: { no_quarantine: true }
 cask "logitech-options", args: { no_quarantine: true }
+cask "balenaetcher", args: { no_quarantine: true }
+# Internet
+cask "firefox", args: { no_quarantine: true }
+cask "google-chrome", args: { no_quarantine: true }
+cask "tor-browser", args: { no_quarantine: true }
 # Gaming
 cask "runelite", args: { no_quarantine: true }
 cask "minecraft", args: { no_quarantine: true }
@@ -54,6 +58,7 @@ cask "cisco-jabber", args: { no_quarantine: true }
 cask "tableau", args: { no_quarantine: true }
 cask "tableau-prep", args: { no_quarantine: true }
 # Productivity
+cask "microsoft-remote-desktop", args: { no_quarantine: true }
 cask "zoom", args: { no_quarantine: true }
 # Content Creation
 cask "adobe-creative-cloud", args: { no_quarantine: true }
@@ -73,6 +78,7 @@ mas "Microsoft Excel", id: 462058435
 mas "Microsoft Word", id: 462054704
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft OneNote", id: 784801555
+mas "Microsoft Outlook", id: 985367838
 
 #####################################################
 # System Fonts                                      #
