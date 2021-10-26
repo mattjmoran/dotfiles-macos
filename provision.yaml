@@ -18,6 +18,7 @@
     ~/.config/skhd/skhdrc: .skhdrc
     ~/.config/spacebar/spacebarrc: .spacebarrc
     ~/.config/kitty/kitty.conf: kitty.conf
+    ~/Brewfile: brew/Brewfile
 
 - shell:
     - command: bash brew/brew.sh

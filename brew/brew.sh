@@ -12,7 +12,7 @@ else
 fi
 
 # Installs taps (repositories), brew (packages) and casks (applications)
-brew bundle --no-lock --quiet
+brew bundle --no-lock --quiet --file=~/Brewfile
 
 # Check default shell, set it to Fish
 if [ ! -n "`$SHELL -c 'echo $FISH_VERSION'`" ] ; then
