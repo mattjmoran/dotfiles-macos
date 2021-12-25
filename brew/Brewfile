@@ -60,6 +60,7 @@ cask "tableau-prep", args: { no_quarantine: true }
 # Productivity
 cask "microsoft-remote-desktop", args: { no_quarantine: true }
 cask "zoom", args: { no_quarantine: true }
+cask "numi", args: { no_quarantine: true }
 # Content Creation
 cask "adobe-creative-cloud", args: { no_quarantine: true }
 cask "processing", args: { no_quarantine: true }
