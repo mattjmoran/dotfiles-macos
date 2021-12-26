@@ -17,8 +17,9 @@ brew bundle --no-lock --quiet --file=~/Brewfile
 # Check default shell, set it to Fish
 if [ ! -n "`$SHELL -c 'echo $FISH_VERSION'`" ] ; then
     echo "Setting default shell to fish..."
-    sudo bash -c 'echo /usr/local/bin/fish >> /etc/shells'
-    chsh -s /usr/local/bin/fish
+    FISH=$(which fish)
+    echo "$FISH" | sudo tee -a /etc/shells
+    chsh -s $FISH
 else
     echo "Default shell is already fish."
 fi
@@ -29,30 +30,5 @@ if [ $? == 0 ] ; then
     defaultbrowser firefox
 fi
 
-# Check to see if skhd is running, restart or start service based on result
-brew services list | grep skhd
-if [ $? != 0 ] ; then
-    brew services start skhd
-else
-    brew services restart skhd
-fi
-
-# Check to see if yabai is running, restart or start & install SA based on resut
-brew services list | grep yabai
-if [ $? != 0 ] ; then
-    brew services start yabai
-    sudo yabai --install-sa
-else
-    brew services restart yabai
-fi
-
-# Check to see if spacebar is running, restart or start service based on result
-brew services list | grep spacebar
-if [ $? != 0 ] ; then
-    brew services start spacebar
-else
-    brew services restart spacebar
-fi
-
 # Set the system wallpaper to "DefaultDesktop.jpg"
-wallpaper set DefaultDesktop.jpg
+wallpaper set ../DefaultDesktop.jpg

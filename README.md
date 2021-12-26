@@ -1,5 +1,5 @@
 # My macOS Dotfiles
-@mattjmoran's 2017 MacBook Pro 13" | macOS Big Sur  
+@mattjmoran's 2021 MacBook Pro 14" | Apple M1 Pro | macOS Monterey  
 
 ### Louvre -- a macOS Theme
 Terminal Color Scheme: Mona Lisa  
@@ -12,8 +12,16 @@ Wallpaper Image: "The Louvre"
 
 ## Install
 
+Homebrew must be installed prior to setup:
+[Homebrew Installation Documentation](https://docs.brew.sh/Installation)
+
+If you are using a system with an Apple Silicon CPU, run the following command prior to further setup: 
+```bash
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```
+
 Install the latest version by using:
 
 ```bash
-git clone https://github.com/mattjmoran/dotfiles.git && cd dotfiles && ./provision.sh
+git clone https://github.com/mattjmoran/dotfiles.git --recursive && cd dotfiles && ./provision.sh
 ```

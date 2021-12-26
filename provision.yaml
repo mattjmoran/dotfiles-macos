@@ -6,6 +6,9 @@
       force: true
       relink: true
 
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
 - link:
     ~/.gitconfig: .gitconfig
     ~/.vimrc: .vimrc
@@ -14,9 +17,6 @@
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/functions/fish_prompt.fish: fish/functions/fish_prompt.fish
     ~/.config/fish/functions/fish_right_prompt.fish: fish/functions/fish_right_prompt.fish
-    ~/.config/yabai/yabairc: .yabairc
-    ~/.config/skhd/skhdrc: .skhdrc
-    ~/.config/spacebar/spacebarrc: .spacebarrc
     ~/.config/kitty/kitty.conf: kitty.conf
     ~/Brewfile: brew/Brewfile
 
@@ -24,5 +24,10 @@
     - command: bash brew/brew.sh
       stdout: true
       stderr: true 
+      description: Running brew/brew.sh script
     - command: bash .macos
+      stdout: true
       stderr: true
+      description: Running .macos configurations script
+      quiet: true
+

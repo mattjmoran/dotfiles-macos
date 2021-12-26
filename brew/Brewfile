@@ -7,10 +7,6 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-drivers"
-# Yabai/SKHD
-tap "koekeishiya/formulae"
-# Spacebar
-tap "cmacrae/formulae"
 
 #####################################################
 # Brews (Packages)                                  #
@@ -30,10 +26,6 @@ brew "mdv"
 brew "bat"
 brew "exa"
 brew "tree"
-# Window Manager
-brew "yabai"
-brew "skhd"
-brew "spacebar"
 
 #####################################################
 # Casks (Applications)                              #
@@ -54,11 +46,7 @@ cask "steam", args: { no_quarantine: true }
 cask "discord", args: { no_quarantine: true }
 # Work
 cask "microsoft-teams", args: { no_quarantine: true }
-cask "cisco-jabber", args: { no_quarantine: true }
-cask "tableau", args: { no_quarantine: true }
-cask "tableau-prep", args: { no_quarantine: true }
 # Productivity
-cask "microsoft-remote-desktop", args: { no_quarantine: true }
 cask "zoom", args: { no_quarantine: true }
 cask "numi", args: { no_quarantine: true }
 # Content Creation
@@ -68,6 +56,8 @@ cask "processing", args: { no_quarantine: true }
 cask "parallels", args: { no_quarantine: true } 
 # Development
 cask "eclipse-java", args: { no_quarantine: true }
+# Window Manager
+cask "amethyst", args: { no_quarantine: true }
 
 #####################################################
 # Mac App Store                                     #
@@ -87,4 +77,3 @@ mas "Microsoft Outlook", id: 985367838
 #####################################################
 # Used in: .spaceebarrc & kitty.conf
 cask "font-meslo-lg-nerd-font"
-
