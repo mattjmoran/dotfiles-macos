@@ -12,6 +12,7 @@
 - link:
     ~/.gitconfig: .gitconfig
     ~/.vimrc: .vimrc
+    ~/.amethyst: .amethyst
     ~/.gitignore: .gitignore
     ~/.config/fish/fish_variables: fish/fish_variables
     ~/.config/fish/config.fish: fish/config.fish

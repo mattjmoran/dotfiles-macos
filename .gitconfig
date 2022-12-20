@@ -3,3 +3,7 @@
 	email = 2759007+mattjmoran@users.noreply.github.com
 [core]
 	excludesfile = /Users/mjm/.gitignore
+[fetch]
+	prune = true
+[init]
+	defaultBranch = main

@@ -19,9 +19,12 @@ brew "defaultbrowser"
 brew "wallpaper"
 brew "mas"
 brew "jq"
+brew "bitwarden-cli"
 # Development
 brew "openjdk"
+brew "java"
 brew "mdv"
+brew "gcc"
 # Apperance
 brew "bat"
 brew "exa"
@@ -56,14 +59,18 @@ cask "processing", args: { no_quarantine: true }
 cask "parallels", args: { no_quarantine: true } 
 # Development
 cask "eclipse-java", args: { no_quarantine: true }
+cask "visual-studio-code", args: { no_quarantine: true }
 # Window Manager
 cask "amethyst", args: { no_quarantine: true }
+# Art/Design
+cask "figma", args: { no_quarantine: true }
 
 #####################################################
 # Mac App Store                                     #
 #####################################################
 # Tools/Utilities
 mas "bitwarden", id: 1352778147
+mas "Parcel - Delivery Tracking", id: 639968404
 # Productivity
 mas "iA Writer", id: 775737590
 mas "Microsoft Excel", id: 462058435
@@ -71,6 +78,8 @@ mas "Microsoft Word", id: 462054704
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
+# Entertainment
+mas "Friendly Streaming Browser", id: 553245401
 
 #####################################################
 # System Fonts                                      #

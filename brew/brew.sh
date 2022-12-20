@@ -18,6 +18,7 @@ brew bundle --no-lock --quiet --file=~/Brewfile
 if [ ! -n "`$SHELL -c 'echo $FISH_VERSION'`" ] ; then
     echo "Setting default shell to fish..."
     FISH=$(which fish)
+    fish_add_path /opt/homebrew/bin
     echo "$FISH" | sudo tee -a /etc/shells
     chsh -s $FISH
 else
