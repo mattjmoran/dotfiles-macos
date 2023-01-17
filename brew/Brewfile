@@ -7,63 +7,73 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-drivers"
+tap "homebrew/autoupdate"
+
+# Third-party
+tap "cmacrae/formulae"
+tap "koekeishiya/formulae"
+tap "spicetify/homebrew-tap"
 
 #####################################################
 # Brews (Packages)                                  #
 #####################################################
-# Tools/Utilities
-brew "git"
+# Terminal
 brew "fish"
+brew "starship"
 brew "neofetch"
+brew "bat"
+brew "exa"
+brew "tree"
+brew "wget"
+brew "jq"
+# Tools/Utilities
 brew "defaultbrowser"
 brew "wallpaper"
 brew "mas"
-brew "jq"
 brew "bitwarden-cli"
+brew "spicetify-cli"
 # Development
+brew "git"
 brew "openjdk"
 brew "java"
 brew "mdv"
 brew "gcc"
-# Apperance
-brew "bat"
-brew "exa"
-brew "tree"
+# Appearance
+brew "spacebar"
+brew "yabai"
 
 #####################################################
 # Casks (Applications)                              #
 #####################################################
 # Tools/Utilities
-cask "kitty", args: { no_quarantine: true }
-cask "notion", args: { no_quarantine: true }
-cask "logitech-options", args: { no_quarantine: true }
+cask "raycast", args: { no_quarantine: true }
+cask "numi", args: { no_quarantine: true }
 cask "balenaetcher", args: { no_quarantine: true }
+# Productivity
+cask "notion", args: { no_quarantine: true }
+# Development
+cask "kitty", args: { no_quarantine: true }
+cask "eclipse-java", args: { no_quarantine: true }
+cask "visual-studio-code", args: { no_quarantine: true }
+# Art/Design
+cask "adobe-creative-cloud", args: { no_quarantine: true }
+cask "figma", args: { no_quarantine: true }
+cask "processing", args: { no_quarantine: true }
 # Internet
 cask "firefox", args: { no_quarantine: true }
 cask "google-chrome", args: { no_quarantine: true }
+cask "microsoft-edge", args: { no_quarantine: true }
 cask "tor-browser", args: { no_quarantine: true }
 # Gaming
 cask "runelite", args: { no_quarantine: true }
 cask "minecraft", args: { no_quarantine: true }
 cask "steam", args: { no_quarantine: true }
 cask "discord", args: { no_quarantine: true }
-# Work
+# Work/School
 cask "microsoft-teams", args: { no_quarantine: true }
-# Productivity
 cask "zoom", args: { no_quarantine: true }
-cask "numi", args: { no_quarantine: true }
-# Content Creation
-cask "adobe-creative-cloud", args: { no_quarantine: true }
-cask "processing", args: { no_quarantine: true }
-# Virtualization
-cask "parallels", args: { no_quarantine: true } 
-# Development
-cask "eclipse-java", args: { no_quarantine: true }
-cask "visual-studio-code", args: { no_quarantine: true }
-# Window Manager
-cask "amethyst", args: { no_quarantine: true }
-# Art/Design
-cask "figma", args: { no_quarantine: true }
+# Media
+cask "spotify", args: { no_quarantine: true }
 
 #####################################################
 # Mac App Store                                     #
@@ -78,8 +88,6 @@ mas "Microsoft Word", id: 462054704
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
-# Entertainment
-mas "Friendly Streaming Browser", id: 553245401
 
 #####################################################
 # System Fonts                                      #

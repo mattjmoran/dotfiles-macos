@@ -10,15 +10,16 @@
   - [git submodule update --init --recursive, Installing submodules]
 
 - link:
-    ~/.gitconfig: .gitconfig
-    ~/.vimrc: .vimrc
-    ~/.amethyst: .amethyst
-    ~/.gitignore: .gitignore
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore: git/.gitignore
+    ~/.vimrc: vim/.vimrc
     ~/.config/fish/fish_variables: fish/fish_variables
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/functions/fish_prompt.fish: fish/functions/fish_prompt.fish
     ~/.config/fish/functions/fish_right_prompt.fish: fish/functions/fish_right_prompt.fish
-    ~/.config/kitty/kitty.conf: kitty.conf
+    ~/.config/kitty/kitty.conf: kitty/kitty.conf
+    ~/.spacebarrc: spacebar/.spacebarrc
+    ~/.yabairc: yabai/.yabairc
     ~/Brewfile: brew/Brewfile
 
 - shell:
@@ -26,7 +27,7 @@
       stdout: true
       stderr: true 
       description: Running brew/brew.sh script
-    - command: bash .macos
+    - command: bash macos/macos.sh
       stdout: true
       stderr: true
       description: Running .macos configurations script

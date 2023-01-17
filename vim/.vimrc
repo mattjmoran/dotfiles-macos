@@ -34,7 +34,6 @@ set title " Set the window’s title, reflecting the file currently being edited
 " Miscellaneous
 set formatoptions+=j " Delete comment characters when joining lines
 set history=1000 " Increase the undo limit
-set spell " Enable spellchecking
 set showmatch " Shows matching brackets
 set nocompatible
 
@@ -53,6 +52,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'itchyny/lightline.vim'
 Plug 'frazrepo/vim-rainbow'
+Plug 'connorholyday/vim-snazzy'
 
 " Initialize plugin system
 call plug#end()

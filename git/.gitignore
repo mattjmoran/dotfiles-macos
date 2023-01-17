@@ -9,6 +9,3 @@ Thumbs.db
 # External drives
 .Spotlight-V100
 .Trashes
-
-# Brew
-/brew/Brewfile.lock.json

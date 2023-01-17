@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+
+#
+# for this to work you must configure sudo such that
+# it will be able to run the command without password
+#
+# see this wiki page for information:
+#  - https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
+#
+# yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+# sudo yabai --load-sa
+#
+
+# global settings
+yabai -m config                                 \
+    mouse_follows_focus          off            \
+    focus_follows_mouse          off            \
+    window_origin_display        default        \
+    window_zoom_persist          on             \
+    window_topmost               off            \
+    window_shadow                off            \
+    window_animation_duration    0.0            \
+    window_animation_frame_rate  10             \
+    window_opacity               off            \
+    active_window_border_color   0xffF3F99D     \
+    normal_window_border_color   0xff2E313D     \
+    window_border_width          3              \
+    window_border_radius         0              \
+    window_border_blur           off            \
+    window_border_hidpi          on             \
+    window_border                on             
+
+echo "yabai configuration loaded.."

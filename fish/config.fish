@@ -6,3 +6,6 @@ if status is-interactive
     alias gcc='gcc-11'
 end
 fish_add_path /opt/homebrew/opt/cython/bin
+
+# Starship prompt
+starship init fish | source
