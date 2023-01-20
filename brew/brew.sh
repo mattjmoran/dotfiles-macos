@@ -194,3 +194,64 @@ for dir in /Users/$(whoami)/Library/Application\ Support/Firefox/Profiles/*; do
 done
 # Remove the themes contents
 cd ..; rm -rf ffcss
+
+#################################################################################
+#
+# 10. Install Fluent Spotify theme
+#
+#################################################################################
+
+echo -e "\033[0;33m10. Install the Snazzy Dribbblish Spotify theme...\033[0m"
+
+# Kill Spotify if it's running
+if pgrep -x "Spotify" > /dev/null; then
+    echo "Spotify is running. Killing it..."
+    killall Spotify > /dev/null
+fi
+# Move to the Spicetify folder
+cd "$(dirname "$(spicetify -c)")/Themes/"
+# Clone the theme repo, Dribbblish https://github.com/spicetify/spicetify-themes/tree/master/Dribbblish
+git clone https://github.com/spicetify/spicetify-themes.git -q
+# See if a Dribbblish folder already exists and delete it
+if [ -d "Dribbblish" ]; then
+    rm -rf Dribbblish
+fi
+# Move the Dribbblish theme to the Themes folder
+mv spicetify-themes/Dribbblish .
+# Delete the spicetify-themes folder
+rm -rf spicetify-themes
+# Move to the Dribbblish directory
+cd Dribbblish
+# Remove unused files: all .png, .ps1 and .md files
+find . -type f -name "*.png" -delete
+find . -type f -name "*.ps1" -delete
+find . -type f -name "*.md" -delete
+# Append the custom Snazzy color theme to the color.ini file
+echo "
+
+[snazzy]
+text               = F1F1F0
+subtext            = EFF0EB
+sidebar-text       = F1F1F0
+main               = 282a36
+sidebar            = 2E313D
+player             = 282a36
+card               = 282a36
+shadow             = 000000
+selected-row       = 686868
+button             = 5AF78E
+button-active      = 5AF78E
+button-disabled    = 686868
+tab-active         = 57C7FF
+notification       = F3F99D
+notification-error = FF5C57
+misc               = 686868" >> color.ini
+# Run a backup of the current theme (in case you want to revert)
+spicetify backup apply > /dev/null
+# Apply the Snazzy Dribbblish theme
+mkdir -p ../../Extensions
+cp dribbblish.js ../../Extensions/.
+spicetify config extensions dribbblish.js > /dev/null
+spicetify config current_theme Dribbblish color_scheme snazzy > /dev/null
+spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 > /dev/null
+spicetify apply
