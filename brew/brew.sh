@@ -159,7 +159,7 @@ fi
 # Don’t pollute your current directory
 mkdir ffcss > /dev/null; cd ffcss
 # Install the latest release by downloading the binary on Github
-git clone "https://github.com/migueravila/SimpleFox.git" -q
+git clone "https://github.com/migueravila/SimpleFox.git"
 # Adjust the theme to match the snazzy theme
 # Replace this line   --sfwindow: #19171a;
 # With this line      --sfwindow: #282a36;
@@ -211,10 +211,14 @@ fi
 # Move to the Spicetify folder
 cd "$(dirname "$(spicetify -c)")/Themes/"
 # Clone the theme repo, Dribbblish https://github.com/spicetify/spicetify-themes/tree/master/Dribbblish
-git clone https://github.com/spicetify/spicetify-themes.git -q
+git clone https://github.com/spicetify/spicetify-themes.git
 # See if a Dribbblish folder already exists and delete it
 if [ -d "Dribbblish" ]; then
     rm -rf Dribbblish
+fi
+# See if a color.ini file exists outside the theme (happens when an error occurs), delete it
+if [ -f "color.ini" ]; then
+    rm color.ini
 fi
 # Move the Dribbblish theme to the Themes folder
 mv spicetify-themes/Dribbblish .

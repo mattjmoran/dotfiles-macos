@@ -1,6 +1,6 @@
-#####################################################
-# Taps (Third-party Repositories)                   #
-#####################################################
+###############################################################
+# Taps (Homebrew & Third-party Repositories)                  #
+###############################################################
 # Homebrew
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -8,15 +8,14 @@ tap "homebrew/core"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-drivers"
 tap "homebrew/autoupdate"
-
 # Third-party
-tap "cmacrae/formulae"
-tap "koekeishiya/formulae"
-tap "spicetify/homebrew-tap"
+tap "cmacrae/formulae" # spacebar
+tap "koekeishiya/formulae" # yabai
+tap "spicetify/homebrew-tap" # Spicetify
 
-#####################################################
-# Brews (Packages)                                  #
-#####################################################
+###############################################################
+# Brews (Packages)                                            #
+###############################################################
 # Terminal
 brew "fish"
 brew "starship"
@@ -34,17 +33,23 @@ brew "bitwarden-cli"
 brew "spicetify-cli"
 # Development
 brew "git"
+brew "python3"
 brew "openjdk"
 brew "java"
 brew "mdv"
 brew "gcc"
+brew "yarn"
+brew "npm"
+brew "ruff"
+brew "ghcup"
+brew "ffmpeg"
 # Appearance
 brew "spacebar"
 brew "yabai"
 
-#####################################################
-# Casks (Applications)                              #
-#####################################################
+###############################################################
+# Casks (Applications)                                        #
+###############################################################
 # Tools/Utilities
 cask "raycast", args: { no_quarantine: true }
 cask "numi", args: { no_quarantine: true }
@@ -72,12 +77,15 @@ cask "discord", args: { no_quarantine: true }
 # Work/School
 cask "microsoft-teams", args: { no_quarantine: true }
 cask "zoom", args: { no_quarantine: true }
+cask "slack", args: { no_quarantine: true }
 # Media
 cask "spotify", args: { no_quarantine: true }
+cask "webtorrent", args: { no_quarantine: true }
+cask "vlc", args: { no_quarantine: true }
 
-#####################################################
-# Mac App Store                                     #
-#####################################################
+###############################################################
+# Mac App Store                                               #
+###############################################################
 # Tools/Utilities
 mas "bitwarden", id: 1352778147
 mas "Parcel - Delivery Tracking", id: 639968404
@@ -88,9 +96,11 @@ mas "Microsoft Word", id: 462054704
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
+# Development
+mas "Xcode", id: 497799835
 
-#####################################################
-# System Fonts                                      #
-#####################################################
-# Used in: .spaceebarrc & kitty.conf
+###############################################################
+# System Fonts                                                #
+###############################################################
+# Used in: .spaceebarrc, kitty.conf & .vscode (remote)
 cask "font-meslo-lg-nerd-font"

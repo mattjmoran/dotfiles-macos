@@ -21,15 +21,16 @@
     ~/.spacebarrc: spacebar/.spacebarrc
     ~/.yabairc: yabai/.yabairc
     ~/Brewfile: brew/Brewfile
+    ~/brewup.sh: brew/brewup.sh
 
 - shell:
     - command: bash brew/brew.sh
       stdout: true
       stderr: true 
-      description: Running brew/brew.sh script
+      description: Running brew/brew.sh setup script
     - command: bash macos/macos.sh
       stdout: true
       stderr: true
-      description: Running .macos configurations script
+      description: Running macos/macos.sh configurations script
       quiet: true
 
